@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="English Learning Coach",
-    page_icon="🇬🇧",
+    page_title="LUNEXA ENG",
+    page_icon="LE",
     layout="wide"
 )
 
