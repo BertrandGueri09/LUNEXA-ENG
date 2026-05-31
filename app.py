@@ -28,7 +28,7 @@ def init_state():
 
 init_state()
 
-st.sidebar.title("🇬🇧 English Learning Coach")
+st.sidebar.title("LUNEXA ENG")
 st.sidebar.caption("Apprendre l’anglais étape par étape")
 
 st.sidebar.metric("XP", st.session_state["xp"])
