@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🇬🇧 English Learning Coach")
+st.title("LE LUNEXA ENG")
 st.subheader("Application complète pour apprendre l’anglais")
 
 st.write("""
