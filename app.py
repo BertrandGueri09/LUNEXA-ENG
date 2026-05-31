@@ -29,8 +29,17 @@ def init_state():
 init_state()
 
 st.sidebar.title("LUNEXA ENG")
-st.sidebar.caption("Apprendre l’anglais étape par étape")
 
+if not st.session_state.get("user_name"):
+    nom = st.sidebar.text_input("Votre nom")
+    if nom:
+        st.session_state["user_name"] = nom
+        st.rerun()
+    st.stop()
+
+st.sidebar.success(f"👋 {st.session_state['user_name']}")
+
+st.sidebar.caption("Apprendre l’anglais étape par étape")
 st.sidebar.metric("XP", st.session_state["xp"])
 st.sidebar.metric("Streak", f"{st.session_state['streak']} jour(s) 🔥")
 st.sidebar.write(f"**Niveau :** {st.session_state['niveau']}")
